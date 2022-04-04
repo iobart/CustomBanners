@@ -6,11 +6,12 @@ import '../utils/activity_indicator.dart';
 class CustomBanner extends StatelessWidget {
   final BannerModel? bannerModel;
   final Function(String)? onSendSite;
-
+  final double? radius;
   const CustomBanner({
     Key? key,
     this.onSendSite,
     this.bannerModel,
+    this.radius,
   }) : super(key: key);
 
   @override
@@ -20,7 +21,7 @@ class CustomBanner extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 6),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(10.0,),
+          borderRadius: BorderRadius.circular(radius!),
           child: CachedNetworkImage(
             imageUrl: bannerModel!.image!,
             placeholder: (context, url) => ActivityIndicator(),

@@ -65,6 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: SingleChildScrollView(
         child: Column(children: [
           CustomBannersBase(
+            radius: 0,
             listBanners: listBanners,
           )
         ]),

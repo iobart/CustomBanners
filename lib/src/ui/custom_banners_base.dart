@@ -8,7 +8,8 @@ class CustomBannersBase extends StatelessWidget {
   double heightbanner;
   List<BannerModel>listBanners;
   bool autoplay;
-  CustomBannersBase({this.heightbanner = 175.0,required  this.listBanners, this.autoplay=false});
+  double  radius;
+  CustomBannersBase({this.heightbanner = 175.0,required  this.listBanners, this.autoplay=false,required this.radius});
   @override
   Widget build(BuildContext context) {
     return listBanners.isEmpty
@@ -24,6 +25,7 @@ class CustomBannersBase extends StatelessWidget {
               containerHeight: heightbanner,
               itemHeight: heightbanner,
               itemBuilder: (BuildContext context, int index) => CustomBanner(
+                radius: radius,
                 bannerModel: listBanners[index],
                 onSendSite: _launchURL,
               ),

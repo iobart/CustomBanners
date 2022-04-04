@@ -19,6 +19,7 @@ void main() {
           home: Material(child:  SingleChildScrollView(
             child: Column(children: [
               CustomBannersBase(
+                radius: 0,
               listBanners: listBanners,
             ),
             ]),
