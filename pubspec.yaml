@@ -1,6 +1,6 @@
 name: custom_banners
 description: New Custom Banners for every project flutter,Designed to display advertising type notices receiving a link and image bannerModel
-version: 1.0.4
+version: 1.0.5
 homepage: https://github.com/iobart/CustomBanners
 
 environment:
@@ -8,9 +8,9 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  url_launcher: ^6.0.20
-  flutter_swiper_null_safety: ^1.0.2
-  cached_network_image: ^3.2.0
+  url_launcher: ^6.3.1
+  flutter_swiper_null_safety_flutter3: ^4.0.3
+  cached_network_image: ^3.4.1
   flutter:
     sdk: flutter
 
